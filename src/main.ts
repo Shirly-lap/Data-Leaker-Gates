@@ -1,9 +1,6 @@
 // Import our custom CSS
+import { App } from './app';
 import './views/pages/scss/style.scss'
-import { SignUp } from './views/pages/signUp';
 
-const app = document.getElementById("app") as HTMLDivElement;
-
-
-
-app.append(SignUp())
+document.addEventListener("DOMContentLoaded", App);
+window.addEventListener("hashchange", App);

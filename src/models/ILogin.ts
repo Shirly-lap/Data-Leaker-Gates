@@ -5,5 +5,11 @@ export interface IcreateUser {
 }
 
 export interface IresponseCreateUser {
-    message: string
+    email: string;
+    password : string;
+    id : number
+}
+
+export interface IresponseLogin {
+    message : string
 }
